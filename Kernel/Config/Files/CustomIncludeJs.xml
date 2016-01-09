@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_config version="1.0" init="Framework">
+	<ConfigItem Name="Frontend::Module###AgentDashboard" Required="1" Valid="1">
+		<Description Translatable="1">
+			Frontend module registration for the agent interface.
+		</Description>
+		<Group>Framework</Group>
+		<SubGroup>Frontend::Agent::ModuleRegistration</SubGroup>
+		<Setting>
+			<FrontendModuleReg>
+				<Description>Agent Dashboard</Description>
+				<Title></Title>
+				<NavBarName>Dashboard</NavBarName>
+				<NavBar>
+					<Description Translatable="1"></Description>
+					<Name Translatable="1">Dashboard</Name>
+					<Link>Action=AgentDashboard</Link>
+					<NavBar>Dashboard</NavBar>
+					<Type>Menu</Type>
+					<Description Translatable="1"></Description>
+					<Block>ItemArea</Block>
+					<AccessKey>d</AccessKey>
+					<Prio>50</Prio>
+				</NavBar>
+				<Loader>
+					<JavaScript>CustomFileBySwapnil.js</JavaScript>
+					<JavaScript>cutom/CustomFileBySwapnil.js</JavaScript>
+					<JavaScript>thirdparty/CustomFileBySwapnil.js</JavaScript>
+				</Loader>
+			</FrontendModuleReg>
+		</Setting>
+	</ConfigItem>
+</otrs_config>
